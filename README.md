@@ -54,4 +54,6 @@ Le plugin utilise les permissions classiques (compatibilité totale avec LuckPer
 |----------------------------------------|---------------------|-----------------------------------|
 | `/magnet give <joueur> [quantité]` | `yoh.magnet.give` | Donner un aimant à un joueur. |
 | `/magnetlog <ID>`                           | `yoh.magnet.log`   | Ouvrir les logs d'un aimant.      |
-|----------------------------------------|---------------------|-----------------------------------|
+
+
+Vidéo présentation du plugin : https://youtu.be/MiTP6uoFQgA
