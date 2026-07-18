@@ -1,0 +1,57 @@
+# Configuration ItemMagnetPlugin
+
+magnet-item:
+  material: WHITE_SHULKER_BOX
+  # Mettez 0 pour ne pas utiliser de CustomModelData
+  custom-model-data: 0
+
+# Rayon d'aspiration quand l'aimant est activé dans l'inventaire du joueur
+radius-inventory: 10
+
+# Fréquence d'aspiration en ticks (20 ticks = 1 seconde)
+pickup-task-interval: 10
+
+# True si l'aimant doit scanner tout le chunk quand il est posé comme bloc
+suck-whole-chunk-when-placed: true
+
+# Rayon de secours si suck-whole-chunk-when-placed est false
+radius-placed: 10
+
+# Activer le support WorldGuard pour empêcher l'aspiration dans les claims (si le plugin est présent)
+worldguard-checks: true
+
+# Protéger les aimants posés contre les explosions (TNT, Creeper, etc.)
+disable-explosion-damage: true
+
+# Empêcher les pistons de déplacer/casser les aimants posés
+disable-piston-break: true
+
+# --- Nouvelles Fonctionnalités ---
+
+full-message:
+  enabled: true
+  # Types disponibles : CHAT, ACTIONBAR, TITLE, BOSSBAR
+  type: ACTIONBAR
+  text: "&c⚠️ Votre Aimant à Item est PLEIN ! ⚠️"
+
+placed-magnet:
+  # Changer la couleur du bloc selon le statut (Vert = Actif, Rouge = Inactif)
+  change-color: true
+  # Activer l'hologramme au-dessus de l'aimant posé
+  hologram-enabled: true
+  hologram-text:
+    - "&bAimant à Item"
+    - "&7Statut: %status%"
+    - "&7Remplissage: &e%percent%%"
+  # Temps (en secondes) entre l'apparition des particules de bordure
+  border-particle-interval: 2
+
+messages:
+  prefix: "&8[&bItemMagnet&8] "
+  no-permission: "&cVous n'avez pas la permission d'utiliser cette commande."
+  magnet-given: "&aAimant donné à %player%."
+  player-not-found: "&cJoueur introuvable."
+  magnet-activated: "&aL'aimant a été activé."
+  magnet-deactivated: "&cL'aimant a été désactivé."
+  gui-storage-title: "Inventaire de l'aimant"
+  gui-filter-title: "Filtres de l'aimant"
