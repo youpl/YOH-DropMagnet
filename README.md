@@ -2,7 +2,7 @@
 
 **YOH-DropMagnet** est un puissant plugin Minecraft (Spigot/Paper) d'aimant à items pensé pour la performance, la sécurité anti-duplication et la traçabilité.
 
-Compatible de la version **1.20 à la 1.21.4+** (Arclight, Paper, Spigot).
+Compatible de la version **1.20 à la 26.2** (Arclight, Paper, Spigot, Bukkit).
 
 ## 🧭 Concept & Modes d'Utilisation
 
@@ -50,7 +50,8 @@ Le fichier `config.yml` permet une personnalisation totale :
 
 Le plugin utilise les permissions classiques (compatibilité totale avec LuckPerms) :
 
-| Commande | Permission | Description |
-|---|---|---|
+|                Commande                        |       Permission      |             Description                    |
+|----------------------------------------|---------------------|-----------------------------------|
 | `/magnet give <joueur> [quantité]` | `yoh.magnet.give` | Donner un aimant à un joueur. |
-| `/magnetlog <ID>` | `yoh.magnet.log` | Ouvrir les logs d'un aimant. |
+| `/magnetlog <ID>`                           | `yoh.magnet.log`   | Ouvrir les logs d'un aimant.      |
+|----------------------------------------|---------------------|-----------------------------------|
